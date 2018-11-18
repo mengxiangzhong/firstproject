@@ -1,0 +1,16 @@
+<html>
+<body>
+<h>head</h>
+<br>
+profile:{{uid}}<br>
+
+{% macro render_color(color) %}
+    This is a color:{{color}} {{caller()}}
+{% endmacro %}
+
+{% for color in color: %}
+    {% call render_color(color) %}<br>
+    {% endcall %}
+{% endfor %}
+</body>>
+</html>>
